@@ -1,11 +1,14 @@
-.footer{
+.footer {
     margin: auto;
     background-color: black;
-    color:white;
+    color: white;
     text-align: center;
     padding-bottom: 4px;
 }
-.footer a{
+.footer a {
     text-decoration: none;
-    color:white;
+    color: white;
+}
+.footer a:hover {
+    color: gray; /* Optional: Add a hover effect */
 }
