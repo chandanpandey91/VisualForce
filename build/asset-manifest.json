@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Codeforces-Analyzer/static/css/main.a7cf68f7.css",
-    "main.js": "/Codeforces-Analyzer/static/js/main.3274bd4d.js",
-    "index.html": "/Codeforces-Analyzer/index.html",
-    "main.a7cf68f7.css.map": "/Codeforces-Analyzer/static/css/main.a7cf68f7.css.map",
-    "main.3274bd4d.js.map": "/Codeforces-Analyzer/static/js/main.3274bd4d.js.map"
+    "main.css": "/static/css/main.a7cf68f7.css",
+    "main.js": "/static/js/main.3274bd4d.js",
+    "index.html": "/index.html",
+    "main.a7cf68f7.css.map": "/static/css/main.a7cf68f7.css.map",
+    "main.3274bd4d.js.map": "/static/js/main.3274bd4d.js.map"
   },
   "entrypoints": [
     "static/css/main.a7cf68f7.css",
