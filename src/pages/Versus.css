@@ -1,56 +1,99 @@
-
-.versus-form{
+/* General Styles */
+body {
+    background-color: black; /* Black background */
+    color: white; /* White text for all content */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Versus Form Styling */
+  .versus-form {
     margin-top: 3vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     width: 80vw;
     margin-left: 10vw;
   }
-.versus-text-input{
+  
+  .versus-text-input {
     display: flex;
     flex-direction: row;
-}
-.versus-text-input-component{
-    width:30vw !important;
+  }
+  
+  .versus-text-input-component {
+    width: 30vw !important;
     height: 60px !important;
-    margin-right: 2vw !important; 
-}
-.versus-btn{
+    margin-right: 2vw !important;
+    background-color: #333; /* Dark background for inputs */
+    border: 2px solid #ffeb3b; /* Yellow border */
+    color: white; /* White text inside the input */
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .versus-text-input-component:focus {
+    border-color: #ffeb3b; /* Yellow focus border */
+    box-shadow: 0 0 10px #ffeb3b; /* Yellow glow */
+    outline: none;
+  }
+  
+  .versus-btn {
     display: block !important;
     width: 10vw;
     height: 55px !important;
-}
-@media only screen and (max-width: 750px){
-    .versus-form{
-        display:block;
-    }
-    .versus-text-input{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80vw !important;
-    }
-    .versus-btn{
-        display:flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        margin: auto !important;
-        width : 50vw;
-    }
-}
+    background-color: #8ba3cf; /* Light blue background */
+    color: white; /* White text */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
   
-.versus-graph-components {
+  .versus-btn:hover {
+    background-color: #ff0080; /* Pink background on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 128, 0.3); /* Glowing effect */
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 750px) {
+    .versus-form {
+      display: block;
+    }
+    .versus-text-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80vw !important;
+    }
+    .versus-btn {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: auto !important;
+      width: 50vw;
+    }
+  }
+  
+  /* Graph Components */
+  .versus-graph-components {
     margin-left: 10vw;
     width: 80vw;
     margin-top: 2vh;
-    background-color: #f0d6f6;
+    background-color: #222; /* Dark background for graph */
     border-radius: 10px;
-    border: 1px dashed black;
-}
-.versus-last{
+    border: 1px dashed #ffeb3b; /* Yellow dashed border */
+    padding: 20px;
+    color: white; /* White text */
+  }
+  
+  .versus-last {
     margin-bottom: 2vh;
-}
-.versus-user-bio {
+  }
+  
+  /* User Bio */
+  .versus-user-bio {
     display: flex;
     flex-direction: row;
     width: 80vw;
@@ -59,12 +102,23 @@
     justify-content: space-between;
     margin-top: 2vh;
   }
-.versus-user-bio-component {
-    width: 38vw;
-    border: 1px dashed black;
-}
   
-@media only screen and (max-width: 950px) {
+  .versus-user-bio-component {
+    width: 38vw;
+    border: 1px dashed #ffeb3b; /* Yellow dashed border */
+    background-color: #333; /* Dark background for bio components */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .versus-user-bio-component:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Hover effect */
+  }
+  
+  @media only screen and (max-width: 950px) {
     .versus-user-bio {
       display: block;
       margin-top: 0;
@@ -73,9 +127,10 @@
       width: 80vw;
       margin-top: 2vh;
     }
-}
-
-.versus-pie-chart {
+  }
+  
+  /* Pie Chart */
+  .versus-pie-chart {
     display: flex;
     flex-direction: row;
     width: 80vw;
@@ -83,15 +138,18 @@
     margin-right: 10vw;
     justify-content: space-between;
     margin-top: 2vh;
-}
+  }
   
-.versus-pie-chart-component {
+  .versus-pie-chart-component {
     width: 35vw;
-    background-color: #f0d6f6;
+    background-color: #333; /* Dark background for pie chart */
     border-radius: 10px;
-    border: 1px dashed black;
-}
-@media only screen and (max-width: 950px) {
+    border: 1px dashed #ffeb3b; /* Yellow dashed border */
+    padding: 20px;
+    color: white; /* White text */
+  }
+  
+  @media only screen and (max-width: 950px) {
     .versus-pie-chart {
       display: block;
       margin-top: 0;
@@ -100,13 +158,23 @@
       width: 80vw;
       margin-top: 2vh;
     }
-}
-
-
-/* Individual components */
-.versus-table-head{
-    background-color: #8ba3cf !important;
-}
-.versus-table-body{
-    background-color: #f0d6f6 ;
-}
+  }
+  
+  /* Individual components */
+  .versus-table-head {
+    background-color: #8ba3cf !important; /* Light blue header */
+    color: white; /* White text */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .versus-table-body {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+  }
+  
+  .versus-table-row:hover {
+    background-color: #444; /* Slightly lighter dark color on hover */
+    transition: background-color 0.3s ease;
+  }
+  
