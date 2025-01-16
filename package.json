@@ -1,6 +1,5 @@
 {
   "name": "codeforces",
-  "homepage": "http://srinjoyray.com/Codeforces-Analyzer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
